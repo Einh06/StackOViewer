@@ -30,6 +30,7 @@
 {
     XCTAssertFalse(false, @"added new test in test feature");
     XCTAssertNil(nil, @"what a wonderful feature branch");
+    XCTFail(@"did some bug fixing");
 }
 
 @end
