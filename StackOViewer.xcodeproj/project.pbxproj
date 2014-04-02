@@ -20,7 +20,14 @@
 		17D3440318EC3BC100B581BF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17D343E218EC3BC100B581BF /* Foundation.framework */; };
 		17D3440418EC3BC100B581BF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17D343E618EC3BC100B581BF /* UIKit.framework */; };
 		17D3440C18EC3BC100B581BF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 17D3440A18EC3BC100B581BF /* InfoPlist.strings */; };
-		17D3440E18EC3BC100B581BF /* StackOViewerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D3440D18EC3BC100B581BF /* StackOViewerTests.m */; };
+		17D3441818EC63C600B581BF /* TopicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D3441718EC63C600B581BF /* TopicTests.m */; };
+		17D3441B18EC646100B581BF /* Topic.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D3441A18EC646100B581BF /* Topic.m */; };
+		17D3441D18EC6A8900B581BF /* QuestionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D3441C18EC6A8900B581BF /* QuestionTests.m */; };
+		17D3442018EC6A9B00B581BF /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D3441F18EC6A9B00B581BF /* Question.m */; };
+		17D3442218EC6E0600B581BF /* PersonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D3442118EC6E0600B581BF /* PersonTests.m */; };
+		17D3442518EC6E1400B581BF /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D3442418EC6E1400B581BF /* Person.m */; };
+		17D3442718EC7B2D00B581BF /* AnswerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D3442618EC7B2D00B581BF /* AnswerTests.m */; };
+		17D3442A18EC7B4100B581BF /* Answer.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D3442918EC7B4100B581BF /* Answer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +59,18 @@
 		17D3440118EC3BC100B581BF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		17D3440918EC3BC100B581BF /* StackOViewerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StackOViewerTests-Info.plist"; sourceTree = "<group>"; };
 		17D3440B18EC3BC100B581BF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		17D3440D18EC3BC100B581BF /* StackOViewerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StackOViewerTests.m; sourceTree = "<group>"; };
+		17D3441718EC63C600B581BF /* TopicTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopicTests.m; sourceTree = "<group>"; };
+		17D3441918EC646100B581BF /* Topic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Topic.h; sourceTree = "<group>"; };
+		17D3441A18EC646100B581BF /* Topic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Topic.m; sourceTree = "<group>"; };
+		17D3441C18EC6A8900B581BF /* QuestionTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionTests.m; sourceTree = "<group>"; };
+		17D3441E18EC6A9B00B581BF /* Question.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question.h; sourceTree = "<group>"; };
+		17D3441F18EC6A9B00B581BF /* Question.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question.m; sourceTree = "<group>"; };
+		17D3442118EC6E0600B581BF /* PersonTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonTests.m; sourceTree = "<group>"; };
+		17D3442318EC6E1400B581BF /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		17D3442418EC6E1400B581BF /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		17D3442618EC7B2D00B581BF /* AnswerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnswerTests.m; sourceTree = "<group>"; };
+		17D3442818EC7B4100B581BF /* Answer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Answer.h; sourceTree = "<group>"; };
+		17D3442918EC7B4100B581BF /* Answer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Answer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +135,14 @@
 				17D343F418EC3BC100B581BF /* Main.storyboard */,
 				17D343F718EC3BC100B581BF /* PYFMViewController.h */,
 				17D343F818EC3BC100B581BF /* PYFMViewController.m */,
+				17D3441918EC646100B581BF /* Topic.h */,
+				17D3441A18EC646100B581BF /* Topic.m */,
+				17D3441E18EC6A9B00B581BF /* Question.h */,
+				17D3441F18EC6A9B00B581BF /* Question.m */,
+				17D3442318EC6E1400B581BF /* Person.h */,
+				17D3442418EC6E1400B581BF /* Person.m */,
+				17D3442818EC7B4100B581BF /* Answer.h */,
+				17D3442918EC7B4100B581BF /* Answer.m */,
 				17D343FA18EC3BC100B581BF /* Images.xcassets */,
 				17D343E918EC3BC100B581BF /* Supporting Files */,
 			);
@@ -137,8 +163,11 @@
 		17D3440718EC3BC100B581BF /* StackOViewerTests */ = {
 			isa = PBXGroup;
 			children = (
-				17D3440D18EC3BC100B581BF /* StackOViewerTests.m */,
 				17D3440818EC3BC100B581BF /* Supporting Files */,
+				17D3441718EC63C600B581BF /* TopicTests.m */,
+				17D3441C18EC6A8900B581BF /* QuestionTests.m */,
+				17D3442118EC6E0600B581BF /* PersonTests.m */,
+				17D3442618EC7B2D00B581BF /* AnswerTests.m */,
 			);
 			path = StackOViewerTests;
 			sourceTree = "<group>";
@@ -250,7 +279,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17D3442518EC6E1400B581BF /* Person.m in Sources */,
+				17D3442A18EC7B4100B581BF /* Answer.m in Sources */,
 				17D343F318EC3BC100B581BF /* PYFMAppDelegate.m in Sources */,
+				17D3441B18EC646100B581BF /* Topic.m in Sources */,
+				17D3442018EC6A9B00B581BF /* Question.m in Sources */,
 				17D343F918EC3BC100B581BF /* PYFMViewController.m in Sources */,
 				17D343EF18EC3BC100B581BF /* main.m in Sources */,
 			);
@@ -260,7 +293,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17D3440E18EC3BC100B581BF /* StackOViewerTests.m in Sources */,
+				17D3442218EC6E0600B581BF /* PersonTests.m in Sources */,
+				17D3441818EC63C600B581BF /* TopicTests.m in Sources */,
+				17D3441D18EC6A8900B581BF /* QuestionTests.m in Sources */,
+				17D3442718EC7B2D00B581BF /* AnswerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
