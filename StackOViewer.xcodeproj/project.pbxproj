@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		17D343E318EC3BC100B581BF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17D343E218EC3BC100B581BF /* Foundation.framework */; };
+		17D343E518EC3BC100B581BF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17D343E418EC3BC100B581BF /* CoreGraphics.framework */; };
+		17D343E718EC3BC100B581BF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17D343E618EC3BC100B581BF /* UIKit.framework */; };
+		17D343ED18EC3BC100B581BF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 17D343EB18EC3BC100B581BF /* InfoPlist.strings */; };
+		17D343EF18EC3BC100B581BF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D343EE18EC3BC100B581BF /* main.m */; };
+		17D343F318EC3BC100B581BF /* PYFMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D343F218EC3BC100B581BF /* PYFMAppDelegate.m */; };
+		17D343F618EC3BC100B581BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17D343F418EC3BC100B581BF /* Main.storyboard */; };
+		17D343F918EC3BC100B581BF /* PYFMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D343F818EC3BC100B581BF /* PYFMViewController.m */; };
+		17D343FB18EC3BC100B581BF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17D343FA18EC3BC100B581BF /* Images.xcassets */; };
+		17D3440218EC3BC100B581BF /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17D3440118EC3BC100B581BF /* XCTest.framework */; };
+		17D3440318EC3BC100B581BF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17D343E218EC3BC100B581BF /* Foundation.framework */; };
+		17D3440418EC3BC100B581BF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17D343E618EC3BC100B581BF /* UIKit.framework */; };
+		17D3440C18EC3BC100B581BF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 17D3440A18EC3BC100B581BF /* InfoPlist.strings */; };
+		17D3440E18EC3BC100B581BF /* StackOViewerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D3440D18EC3BC100B581BF /* StackOViewerTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		17D3440518EC3BC100B581BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 17D343D718EC3BC100B581BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17D343DE18EC3BC100B581BF;
+			remoteInfo = StackOViewer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		17D343DF18EC3BC100B581BF /* StackOViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StackOViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		17D343E218EC3BC100B581BF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		17D343E418EC3BC100B581BF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		17D343E618EC3BC100B581BF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		17D343EA18EC3BC100B581BF /* StackOViewer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StackOViewer-Info.plist"; sourceTree = "<group>"; };
+		17D343EC18EC3BC100B581BF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		17D343EE18EC3BC100B581BF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		17D343F018EC3BC100B581BF /* StackOViewer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StackOViewer-Prefix.pch"; sourceTree = "<group>"; };
+		17D343F118EC3BC100B581BF /* PYFMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PYFMAppDelegate.h; sourceTree = "<group>"; };
+		17D343F218EC3BC100B581BF /* PYFMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PYFMAppDelegate.m; sourceTree = "<group>"; };
+		17D343F518EC3BC100B581BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		17D343F718EC3BC100B581BF /* PYFMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PYFMViewController.h; sourceTree = "<group>"; };
+		17D343F818EC3BC100B581BF /* PYFMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PYFMViewController.m; sourceTree = "<group>"; };
+		17D343FA18EC3BC100B581BF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		17D3440018EC3BC100B581BF /* StackOViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StackOViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		17D3440118EC3BC100B581BF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		17D3440918EC3BC100B581BF /* StackOViewerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StackOViewerTests-Info.plist"; sourceTree = "<group>"; };
+		17D3440B18EC3BC100B581BF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		17D3440D18EC3BC100B581BF /* StackOViewerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StackOViewerTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		17D343DC18EC3BC100B581BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17D343E518EC3BC100B581BF /* CoreGraphics.framework in Frameworks */,
+				17D343E718EC3BC100B581BF /* UIKit.framework in Frameworks */,
+				17D343E318EC3BC100B581BF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17D343FD18EC3BC100B581BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17D3440218EC3BC100B581BF /* XCTest.framework in Frameworks */,
+				17D3440418EC3BC100B581BF /* UIKit.framework in Frameworks */,
+				17D3440318EC3BC100B581BF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		17D343D618EC3BC100B581BF = {
+			isa = PBXGroup;
+			children = (
+				17D343E818EC3BC100B581BF /* StackOViewer */,
+				17D3440718EC3BC100B581BF /* StackOViewerTests */,
+				17D343E118EC3BC100B581BF /* Frameworks */,
+				17D343E018EC3BC100B581BF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		17D343E018EC3BC100B581BF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				17D343DF18EC3BC100B581BF /* StackOViewer.app */,
+				17D3440018EC3BC100B581BF /* StackOViewerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		17D343E118EC3BC100B581BF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				17D343E218EC3BC100B581BF /* Foundation.framework */,
+				17D343E418EC3BC100B581BF /* CoreGraphics.framework */,
+				17D343E618EC3BC100B581BF /* UIKit.framework */,
+				17D3440118EC3BC100B581BF /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		17D343E818EC3BC100B581BF /* StackOViewer */ = {
+			isa = PBXGroup;
+			children = (
+				17D343F118EC3BC100B581BF /* PYFMAppDelegate.h */,
+				17D343F218EC3BC100B581BF /* PYFMAppDelegate.m */,
+				17D343F418EC3BC100B581BF /* Main.storyboard */,
+				17D343F718EC3BC100B581BF /* PYFMViewController.h */,
+				17D343F818EC3BC100B581BF /* PYFMViewController.m */,
+				17D343FA18EC3BC100B581BF /* Images.xcassets */,
+				17D343E918EC3BC100B581BF /* Supporting Files */,
+			);
+			path = StackOViewer;
+			sourceTree = "<group>";
+		};
+		17D343E918EC3BC100B581BF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				17D343EA18EC3BC100B581BF /* StackOViewer-Info.plist */,
+				17D343EB18EC3BC100B581BF /* InfoPlist.strings */,
+				17D343EE18EC3BC100B581BF /* main.m */,
+				17D343F018EC3BC100B581BF /* StackOViewer-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		17D3440718EC3BC100B581BF /* StackOViewerTests */ = {
+			isa = PBXGroup;
+			children = (
+				17D3440D18EC3BC100B581BF /* StackOViewerTests.m */,
+				17D3440818EC3BC100B581BF /* Supporting Files */,
+			);
+			path = StackOViewerTests;
+			sourceTree = "<group>";
+		};
+		17D3440818EC3BC100B581BF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				17D3440918EC3BC100B581BF /* StackOViewerTests-Info.plist */,
+				17D3440A18EC3BC100B581BF /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		17D343DE18EC3BC100B581BF /* StackOViewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17D3441118EC3BC100B581BF /* Build configuration list for PBXNativeTarget "StackOViewer" */;
+			buildPhases = (
+				17D343DB18EC3BC100B581BF /* Sources */,
+				17D343DC18EC3BC100B581BF /* Frameworks */,
+				17D343DD18EC3BC100B581BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StackOViewer;
+			productName = StackOViewer;
+			productReference = 17D343DF18EC3BC100B581BF /* StackOViewer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		17D343FF18EC3BC100B581BF /* StackOViewerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17D3441418EC3BC100B581BF /* Build configuration list for PBXNativeTarget "StackOViewerTests" */;
+			buildPhases = (
+				17D343FC18EC3BC100B581BF /* Sources */,
+				17D343FD18EC3BC100B581BF /* Frameworks */,
+				17D343FE18EC3BC100B581BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				17D3440618EC3BC100B581BF /* PBXTargetDependency */,
+			);
+			name = StackOViewerTests;
+			productName = StackOViewerTests;
+			productReference = 17D3440018EC3BC100B581BF /* StackOViewerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		17D343D718EC3BC100B581BF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = PYFM;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Piraya Mobile";
+				TargetAttributes = {
+					17D343FF18EC3BC100B581BF = {
+						TestTargetID = 17D343DE18EC3BC100B581BF;
+					};
+				};
+			};
+			buildConfigurationList = 17D343DA18EC3BC100B581BF /* Build configuration list for PBXProject "StackOViewer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 17D343D618EC3BC100B581BF;
+			productRefGroup = 17D343E018EC3BC100B581BF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				17D343DE18EC3BC100B581BF /* StackOViewer */,
+				17D343FF18EC3BC100B581BF /* StackOViewerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		17D343DD18EC3BC100B581BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17D343FB18EC3BC100B581BF /* Images.xcassets in Resources */,
+				17D343ED18EC3BC100B581BF /* InfoPlist.strings in Resources */,
+				17D343F618EC3BC100B581BF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17D343FE18EC3BC100B581BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17D3440C18EC3BC100B581BF /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		17D343DB18EC3BC100B581BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17D343F318EC3BC100B581BF /* PYFMAppDelegate.m in Sources */,
+				17D343F918EC3BC100B581BF /* PYFMViewController.m in Sources */,
+				17D343EF18EC3BC100B581BF /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17D343FC18EC3BC100B581BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17D3440E18EC3BC100B581BF /* StackOViewerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		17D3440618EC3BC100B581BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 17D343DE18EC3BC100B581BF /* StackOViewer */;
+			targetProxy = 17D3440518EC3BC100B581BF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		17D343EB18EC3BC100B581BF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				17D343EC18EC3BC100B581BF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		17D343F418EC3BC100B581BF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				17D343F518EC3BC100B581BF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		17D3440A18EC3BC100B581BF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				17D3440B18EC3BC100B581BF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		17D3440F18EC3BC100B581BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		17D3441018EC3BC100B581BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		17D3441218EC3BC100B581BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StackOViewer/StackOViewer-Prefix.pch";
+				INFOPLIST_FILE = "StackOViewer/StackOViewer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		17D3441318EC3BC100B581BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StackOViewer/StackOViewer-Prefix.pch";
+				INFOPLIST_FILE = "StackOViewer/StackOViewer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		17D3441518EC3BC100B581BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/StackOViewer.app/StackOViewer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StackOViewer/StackOViewer-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "StackOViewerTests/StackOViewerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		17D3441618EC3BC100B581BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/StackOViewer.app/StackOViewer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StackOViewer/StackOViewer-Prefix.pch";
+				INFOPLIST_FILE = "StackOViewerTests/StackOViewerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		17D343DA18EC3BC100B581BF /* Build configuration list for PBXProject "StackOViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17D3440F18EC3BC100B581BF /* Debug */,
+				17D3441018EC3BC100B581BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17D3441118EC3BC100B581BF /* Build configuration list for PBXNativeTarget "StackOViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17D3441218EC3BC100B581BF /* Debug */,
+				17D3441318EC3BC100B581BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		17D3441418EC3BC100B581BF /* Build configuration list for PBXNativeTarget "StackOViewerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17D3441518EC3BC100B581BF /* Debug */,
+				17D3441618EC3BC100B581BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 17D343D718EC3BC100B581BF /* Project object */;
+}
