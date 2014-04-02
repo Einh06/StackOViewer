@@ -28,7 +28,8 @@
 
 - (void)testExample
 {
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+    XCTAssertFalse(false, @"added new test in test feature");
+    XCTAssertNil(nil, @"what a wonderful feature branch");
 }
 
 @end
