@@ -12,6 +12,7 @@
 @interface AnswerTests : XCTestCase
 {
     Answer *answer;
+    Answer *otherAnswer;
 }
 @end
 
@@ -24,12 +25,42 @@
     answer.text = @"Some Text in answer";
     answer.person = [[Person alloc] initWithName:@"Jose" imageLocation:@"jose-image"];
     answer.score = 42;
+    
+    otherAnswer = [[Answer alloc] init];
+    otherAnswer.text = @"Some different text in answer";
+    otherAnswer.score = 42;
 }
 
 - (void)tearDown
 {
     answer = nil;
+    otherAnswer = nil;
     [super tearDown];
+}
+
+- (void)testAcceptedAnswerShouldComeFirst
+{
+    otherAnswer.accepted = YES;
+    otherAnswer.score = answer.score - 10;
+    
+    XCTAssertEqual([answer compare:otherAnswer], NSOrderedDescending, @"Accepted answer should come first");
+    XCTAssertEqual([otherAnswer compare:answer], NSOrderedAscending, @"Unaccepted answer should come last");
+}
+
+- (void)testAnswerWithSameScoreCompareEquality
+{
+    otherAnswer.score = answer.score;
+    
+    XCTAssertEqual([answer compare:otherAnswer], NSOrderedSame, @"Both answer of equal rank");
+    XCTAssertEqual([otherAnswer compare:answer], NSOrderedSame, @"Each answer has the same ranking");
+}
+
+- (void)testAnswerWithHigherScroreComesFirst
+{
+    otherAnswer.score = answer.score - 10;
+    
+    XCTAssertEqual([answer compare:otherAnswer], NSOrderedAscending, @"Higher score comes first");
+    XCTAssertEqual([otherAnswer compare:answer], NSOrderedDescending, @"Lower score comes last");
 }
 
 - (void)testAnswerHasSomeText

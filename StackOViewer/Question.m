@@ -7,17 +7,34 @@
 //
 
 #import "Question.h"
+#import "Answer.h"
+
 
 @implementation Question
-@synthesize date = _date;
+{
+    NSMutableSet *answersSet;
+}
+@synthesize date = _date, title = _title, score = _score;
 
-- (instancetype)initWithDate:(NSDate *)date
+
+
+- (instancetype)init
 {
     self = [super init];
     if (self) {
-        
-        _date = date;
+        answersSet = [NSMutableSet set];
     }
     return self;
 }
+
+- (void)addAnswer:(Answer *)answer
+{
+    [answersSet addObject:answer];
+}
+
+- (NSArray *)answersList
+{
+    return [[answersSet allObjects] sortedArrayUsingSelector:@selector(compare:)];
+}
+
 @end
