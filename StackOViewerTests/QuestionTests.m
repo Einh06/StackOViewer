@@ -8,11 +8,15 @@
 
 #import <XCTest/XCTest.h>
 #import "Question.h"
+#import "Answer.h"
 
 @interface QuestionTests : XCTestCase
 {
     Question *question;
+    Answer *lowScoreAnswer;
+    Answer *highScoreAnswer;
 }
+
 @end
 
 @implementation QuestionTests
@@ -24,6 +28,19 @@
     question.date = [NSDate distantFuture];
     question.title = @"Title here";
     question.score = 42;
+    
+    Answer *acceptedAnswer = [[Answer alloc] init];
+    acceptedAnswer.accepted = YES;
+    acceptedAnswer.score = 1;
+    [question addAnswer:acceptedAnswer];
+    
+    lowScoreAnswer = [[Answer alloc] init];
+    lowScoreAnswer.score = -4;
+    [question addAnswer:lowScoreAnswer];
+    
+    highScoreAnswer = [[Answer alloc] init];
+    highScoreAnswer.score = 4;
+    [question addAnswer:highScoreAnswer];
 }
 
 - (void)tearDown
@@ -45,6 +62,26 @@
 - (void)testQuestionKeepScore
 {
     XCTAssertEqual(question.score, 42, @"Question should keep score");
+}
+
+- (void)testQuestionCanHaveAnswerAdded
+{
+    Answer *answer = [[Answer alloc] init];
+    XCTAssertNoThrow([question addAnswer:answer], @"Question can have answer added");
+}
+
+- (void)testAcceptedAnswerComesFirst
+{
+    Answer *firstAnswer = [[question answersList] firstObject];
+    XCTAssertTrue([firstAnswer isAccepted], @"Accepted Answer should come first");
+}
+
+- (void)testHighScoreComesBeforeLow
+{
+    NSArray *answersList = [question answersList];
+    NSUInteger highScoreIndex = [answersList indexOfObject:highScoreAnswer];
+    NSUInteger lowScoreIndex = [answersList indexOfObject:lowScoreAnswer];
+    XCTAssertTrue(highScoreIndex < lowScoreIndex, @"High Score answer should come first");
 }
 
 @end

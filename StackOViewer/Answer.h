@@ -13,7 +13,10 @@
 
 @property NSString *text;
 @property Person *person;
-@property NSUInteger score;
+@property NSInteger score;
 @property BOOL accepted;
+
+- (NSComparisonResult)compare:(Answer *)otherAnswer;
+- (BOOL)isAccepted;
 
 @end
