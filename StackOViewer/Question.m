@@ -14,7 +14,7 @@
 {
     NSMutableSet *answersSet;
 }
-@synthesize date = _date, title = _title, score = _score;
+@synthesize date = _date, title = _title, score = _score, questionID = _questionID;
 
 
 

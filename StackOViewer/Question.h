@@ -9,12 +9,14 @@
 #import <Foundation/Foundation.h>
 
 @class Answer;
-
+@class Person;
 @interface Question : NSObject
 
+@property   NSUInteger questionID;
 @property   NSDate *date;
 @property   NSString *title;
 @property   NSInteger score;
+@property   Person *asker;
 
 - (void)addAnswer:(Answer *)answer;
 - (NSArray *)answersList;
